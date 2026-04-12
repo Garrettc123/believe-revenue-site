@@ -1,19 +1,53 @@
 name: Deploy to Vercel
+
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
+
+      - name: Check Vercel token
+        id: check
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::warning::VERCEL_TOKEN secret not set — skipping deploy"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+
+      - name: Install Vercel CLI
+        if: steps.check.outputs.skip != 'true'
+        run: npm install -g vercel@latest
+
+      - name: Pull Vercel environment info
+        if: steps.check.outputs.skip != 'true'
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build project
+        if: steps.check.outputs.skip != 'true'
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel (production)
+        if: steps.check.outputs.skip != 'true' && github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel (preview)
+        if: steps.check.outputs.skip != 'true' && github.event_name == 'pull_request'
+        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Skip notice
+        if: steps.check.outputs.skip == 'true'
+        run: |
+          echo "Deploy skipped — VERCEL_TOKEN not configured."
+          echo "Add it at: https://github.com/Garrettc123/believe-revenue-site/settings/secrets/actions"
+          echo "Get token from: https://vercel.com/account/tokens"
