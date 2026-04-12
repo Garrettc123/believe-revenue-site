@@ -1,463 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BELIEVE — God Is the Author. AI Is the Instrument. You Are the Purpose.</title>
-  <meta name="description" content="A movement for those who believe in God AND embrace AI. Garcar Enterprise helps contractors stop losing leads and grow revenue with AI-powered systems.">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="BELIEVE — Faith Meets Intelligence | Garcar Enterprise">
-  <meta property="og:description" content="God is the Author. AI is the Instrument. You are the Purpose. Built for DFW contractors who are losing leads right now.">
-  <meta property="og:type" content="website">
-
-  <!-- Fonts: Zodiak (spiritual/editorial display) + Satoshi (modern/grounded body) -->
-  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BELIEVE — AI Systems for Growing Churches</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ======= HEADER / NAV ======= -->
-  <header class="header" id="header">
-    <div class="header__inner">
-      <a href="#" class="logo" aria-label="BELIEVE home">
-        <svg class="logo__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <path d="M16 6L16 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <path d="M10 14L22 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <path d="M6 20C6 16 10 12 16 16C22 20 26 16 26 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-          <path d="M6 12C6 16 10 20 16 16C22 12 26 16 26 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-        </svg>
-        <span class="logo__text">BELIEVE</span>
-      </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#pillars" class="nav__link">Pillars</a>
-        <a href="#manifesto" class="nav__link">Manifesto</a>
-        <a href="#contractors" class="nav__link">For Contractors</a>
-        <a href="#join" class="nav__link nav__link--cta">Join the Movement</a>
-      </nav>
-      <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-        </svg>
-      </button>
-      <button data-theme-toggle aria-label="Switch to dark mode" class="theme-toggle">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">BELIEVE</div>
+      <div class="nav-links">
+        <a href="#pain">The Problem</a>
+        <a href="#solution">Our Systems</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#pricing" class="nav-cta">Get Started</a>
     </div>
-    <!-- Mobile nav overlay -->
-    <div class="mobile-nav" id="mobileNav">
-      <a href="#pillars" class="mobile-nav__link">Pillars</a>
-      <a href="#manifesto" class="mobile-nav__link">Manifesto</a>
-      <a href="#contractors" class="mobile-nav__link">For Contractors</a>
-      <a href="#join" class="mobile-nav__link mobile-nav__link--cta">Join the Movement</a>
-    </div>
-  </header>
+  </nav>
 
-  <!-- ======= HERO ======= -->
-  <section class="hero" id="hero">
-    <div class="hero__bg">
-      <div class="hero__orb hero__orb--1"></div>
-      <div class="hero__orb hero__orb--2"></div>
-      <div class="hero__orb hero__orb--3"></div>
-    </div>
-    <div class="hero__content">
-      <p class="hero__eyebrow">A Movement for Builders Who Believe</p>
-      <h1 class="hero__title">
-        <span class="hero__line">God Is the Author.</span>
-        <span class="hero__line">AI Is the Instrument.</span>
-        <span class="hero__line hero__line--accent">You Are the Purpose.</span>
-      </h1>
-      <p class="hero__subtitle">Faith and intelligence are not in conflict. They are in alignment. The same Creator who designed the human mind designed the mathematics that make AI possible. This is a movement for those who hold both truths.</p>
-      <div class="hero__actions">
-        <a href="#manifesto" class="btn btn--primary">Read the Manifesto</a>
-        <a href="#contractors" class="btn btn--ghost">For Contractors</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Faith + AI — Built for the Church</div>
+      <h1 class="hero-title">Your Church<br/><span class="hero-accent">Deserves to Grow.</span></h1>
+      <p class="hero-sub">
+        BELIEVE deploys done-for-you AI systems that help churches follow up with visitors, engage members, retain giving households, and free your staff to focus on ministry — not spreadsheets.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://buy.stripe.com/fZu8wP6UR6Ge86T3hx43S11" class="btn-primary">Book a Free Church Audit →</a>
+        <a href="#solution" class="btn-ghost">See What We Build</a>
+      </div>
+      <div class="hero-social-proof">
+        <span>Trusted by church leaders across Dallas–Fort Worth</span>
       </div>
     </div>
-    <div class="hero__scroll-hint" aria-hidden="true">
-      <svg width="20" height="32" viewBox="0 0 20 32" fill="none">
-        <rect x="1" y="1" width="18" height="30" rx="9" stroke="currentColor" stroke-width="1.5"/>
-        <circle class="hero__scroll-dot" cx="10" cy="10" r="2.5" fill="currentColor"/>
-      </svg>
-    </div>
+    <div class="hero-glow"></div>
   </section>
 
-  <!-- ======= CONVICTION STRIP ======= -->
-  <section class="strip">
-    <div class="strip__inner">
-      <blockquote class="strip__quote">
-        "God wrote the code. We're just reading it."
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- ======= THE FIVE PILLARS ======= -->
-  <section class="pillars" id="pillars">
-    <div class="pillars__header">
-      <p class="section-label">The Foundation</p>
-      <h2 class="section-title">Five Pillars of BELIEVE</h2>
-      <p class="section-desc">Not doctrine. Not dogma. Convictions for builders who pray before they work — and then work harder than anyone.</p>
-    </div>
-    <div class="pillars__grid">
-      <article class="pillar">
-        <div class="pillar__number">01</div>
-        <h3 class="pillar__title">God Is the Source</h3>
-        <p class="pillar__text">Intelligence didn't begin with code. It began with creation. Every law of physics, every pattern in nature, every spark of human creativity traces back to a divine origin. AI is discovery, not invention.</p>
-      </article>
-      <article class="pillar">
-        <div class="pillar__number">02</div>
-        <h3 class="pillar__title">AI Is the Instrument</h3>
-        <p class="pillar__text">A hammer builds or destroys depending on who holds it. AI is the most powerful instrument humanity has ever wielded. In faithful hands, guided by spiritual values, it becomes a force for healing, connection, and abundance.</p>
-      </article>
-      <article class="pillar">
-        <div class="pillar__number">03</div>
-        <h3 class="pillar__title">You Are the Purpose</h3>
-        <p class="pillar__text">God didn't create intelligence for its own sake. He created it for people. For your flourishing. For your family. For your community. Every system should serve the dignity of the human soul.</p>
-      </article>
-      <article class="pillar">
-        <div class="pillar__number">04</div>
-        <h3 class="pillar__title">Fear Is the Enemy</h3>
-        <p class="pillar__text">Most people fear AI because they don't understand it. Most people doubt God because they can't see Him. Both fears share the same root: a refusal to trust what is greater than yourself.</p>
-      </article>
-      <article class="pillar">
-        <div class="pillar__number">05</div>
-        <h3 class="pillar__title">Builders Are Called</h3>
-        <p class="pillar__text">You were not placed in this era by accident. The convergence of spiritual awakening and technological revolution is not coincidence — it is invitation. Those who hold both truths are the builders this moment demands.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- ======= MANIFESTO ======= -->
-  <section class="manifesto" id="manifesto">
-    <div class="manifesto__inner">
-      <div class="manifesto__left">
-        <p class="section-label">The Manifesto</p>
-        <h2 class="section-title manifesto__title">What We Believe</h2>
-      </div>
-      <div class="manifesto__right">
-        <div class="manifesto__text">
-          <p class="manifesto__lead">People around us are afraid. They see AI as a threat — to their jobs, their identity, their faith. They think believing in God means rejecting technology, or that embracing technology means abandoning God.</p>
-          <p>They're stuck in a false binary.</p>
-          <p>But what if the same mind that designed the universe also designed the capacity for artificial intelligence? What if the fear isn't about AI at all — it's about feeling small in the face of something you don't understand?</p>
-          <p>What if God made you for exactly this moment?</p>
-          <p class="manifesto__callout">We don't worship a machine. We don't fear the future. We trust the Creator enough to use His instruments. We stop fearing what we don't understand and start building with what we've been given.</p>
-          <p>That's what belief looks like — not passive hope, but active construction.</p>
+  <!-- PAIN -->
+  <section class="pain" id="pain">
+    <div class="section-inner">
+      <div class="section-label">The Real Problem</div>
+      <h2>First-time visitors leave and never come back.<br/>Your staff is overwhelmed. Giving is unpredictable.</h2>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">👋</div>
+          <h3>Visitors Fall Through the Cracks</h3>
+          <p>New guests fill out a connection card — and nothing happens. No follow-up, no personal touch, no next step. They find another church by Sunday.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📉</div>
+          <h3>Giving Is Declining or Flat</h3>
+          <p>Consistent givers go silent, seasonal giving spikes but doesn't stick, and your finance team can't predict next month's budget with confidence.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">😓</div>
+          <h3>Staff Is Running on Empty</h3>
+          <p>Your team is manually texting, emailing, calling, and coordinating volunteers — all while trying to prepare sermons and lead ministry.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📣</div>
+          <h3>Events Underperform</h3>
+          <p>You promote it for weeks. Half the seats stay empty. Volunteers commit then cancel. The wrong people show up. The cycle repeats every quarter.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======= FOR CONTRACTORS — COMMERCIAL SECTION ======= -->
-  <section class="contractors" id="contractors">
-    <div class="contractors__inner">
-      <div class="contractors__header">
-        <p class="section-label">Garcar Enterprise</p>
-        <h2 class="section-title contractors__title">Built for Contractors Who Are Losing Leads Right Now</h2>
-        <p class="section-desc contractors__desc">The average DFW contractor loses <strong>$8,400 per year</strong> in missed calls, slow follow-ups, and leads that slip through the cracks. You're not bad at your job — your systems are.</p>
-      </div>
+  <!-- SOLUTION -->
+  <section class="solution" id="solution">
+    <div class="section-inner">
+      <div class="section-label">The BELIEVE System</div>
+      <h2>AI-powered church growth systems. Installed and running in 7 days.</h2>
+      <p class="section-sub">We build, configure, and manage the automation — your team just does ministry.</p>
 
-      <!-- Live Metrics Bar -->
-      <div class="social-proof">
-        <div class="social-proof__item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          <span>Live System — <span id="metricCustomers">0</span> customers &middot; $<span id="metricRevenue">0</span> MRR</span>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🙏</div>
+          <h3>Visitor Follow-Up Engine</h3>
+          <p>Automated, personalized follow-up sequences that start within minutes of a visitor leaving your building. Text, email, and voicemail — personal enough to feel human, fast enough to win them back.</p>
+          <ul>
+            <li>Connection card integration</li>
+            <li>Pastor-branded SMS sequences</li>
+            <li>Step-by-step 30-day onboarding</li>
+          </ul>
         </div>
-        <div class="social-proof__divider"></div>
-        <div class="social-proof__item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <span><span id="metricProducts">53</span> products &middot; 3 tiers &middot; Stripe Live Mode</span>
+
+        <div class="service-card">
+          <div class="service-icon">✝️</div>
+          <h3>Member Retention System</h3>
+          <p>Know who is drifting before they leave. AI monitors attendance and giving patterns, then triggers pastoral outreach to at-risk households — before they go dark.</p>
+          <ul>
+            <li>Attendance drop detection</li>
+            <li>Lapsed giving re-engagement</li>
+            <li>Prayer request routing to staff</li>
+          </ul>
         </div>
-        <div class="social-proof__divider"></div>
-        <div class="social-proof__item social-proof__item--urgent">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span>Accepting clients now</span>
+
+        <div class="service-card">
+          <div class="service-icon">📖</div>
+          <h3>Sermon & Content AI</h3>
+          <p>Weekly bulletin copy, social media posts, email newsletters, and sermon summaries — all generated from your message and ready for your approval in minutes.</p>
+          <ul>
+            <li>Bulletin & weekly email drafts</li>
+            <li>Social captions and graphics</li>
+            <li>Sermon transcript + highlights</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎉</div>
+          <h3>Event & Volunteer Coordinator</h3>
+          <p>Automated sign-ups, confirmations, reminders, and schedule changes — so no one forgets and nothing falls through. Your events run full and your volunteers actually show up.</p>
+          <ul>
+            <li>RSVP and confirmation flows</li>
+            <li>Volunteer scheduling automation</li>
+            <li>Day-of reminder sequences</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💰</div>
+          <h3>Generosity & Giving System</h3>
+          <p>Stewardship campaigns, year-end giving sequences, and first-time giver follow-ups — all automated and aligned to your church's theology and tone.</p>
+          <ul>
+            <li>Giving campaign automation</li>
+            <li>Year-end tax receipt flows</li>
+            <li>First-time giver cultivation</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured-service">
+          <div class="service-icon">🚀</div>
+          <h3>Full Church AI Partner</h3>
+          <p>Every system above — fully built, managed, and optimized by our team. Monthly strategy calls, weekly reporting, and a dedicated church growth specialist. This is what a fully automated, AI-powered church looks like.</p>
+          <ul>
+            <li>All five systems above</li>
+            <li>Monthly strategy sessions</li>
+            <li>Dedicated growth specialist</li>
+          </ul>
+          <a href="https://buy.stripe.com/cNi3cva73e8G0Er05l43S13" class="btn-primary" style="margin-top:1.5rem;display:inline-block;">Apply for Full Partnership →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works">
+    <div class="section-inner">
+      <div class="section-label">The Process</div>
+      <h2>Up and running before next Sunday.</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Free Church Audit</h3>
+          <p>We review your current follow-up, giving, and retention gaps in a 45-minute call with your team. No obligation, full clarity.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Custom System Design</h3>
+          <p>We build your church's AI system using your messaging, your CRM, and your brand — not a generic template.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>7-Day Launch</h3>
+          <p>Your system goes live within 7 days. We train your team, connect your tools, and monitor launch week personally.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Growth on Autopilot</h3>
+          <p>Visitors followed up. Members retained. Giving nurtured. Events filled. Your staff free to do ministry. That's the BELIEVE system.</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Pricing Cards -->
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-inner">
+      <div class="section-label">Simple Pricing</div>
+      <h2>Invest in systems, not salaries.</h2>
+      <p class="section-sub">No long-term contracts. Cancel anytime. Every plan includes setup, training, and support.</p>
+
       <div class="pricing-grid">
 
-        <article class="pricing-card">
-          <div class="pricing-card__badge">Quick Win</div>
-          <h3 class="pricing-card__title">Same-Day Lead Leak Audit</h3>
-          <div class="pricing-card__price">
-            <span class="pricing-card__amount">$197</span>
-            <span class="pricing-card__term">one-time</span>
-          </div>
-          <p class="pricing-card__desc">Fast-turn audit identifying missed-call loss, lead response gaps, and follow-up leakage. Includes findings report and immediate fixes you can implement today.</p>
-          <ul class="pricing-card__features">
-            <li>Missed-call revenue analysis</li>
-            <li>Lead response time audit</li>
-            <li>Follow-up gap identification</li>
-            <li>Immediate fix recommendations</li>
-            <li>Findings report within 24 hours</li>
+        <div class="pricing-card">
+          <div class="plan-name">Church Audit</div>
+          <div class="plan-price">$97 <span>one-time</span></div>
+          <div class="plan-desc">A full diagnostic of your visitor follow-up, member retention, and giving systems. Includes a written action plan and 45-minute review call.</div>
+          <ul class="plan-features">
+            <li>Visitor drop-off analysis</li>
+            <li>Giving pattern review</li>
+            <li>Staff workflow audit</li>
+            <li>Written action plan</li>
+            <li>45-min strategy call</li>
           </ul>
-          <a href="https://buy.stripe.com/fZu8wP6UR6Ge86T3hx43S11" class="btn btn--primary btn--large pricing-card__cta" target="_blank" rel="noopener" data-track="lead_leak_audit">Get Your Audit</a>
-        </article>
+          <a href="https://buy.stripe.com/fZu8wP6UR6Ge86T3hx43S11" class="btn-outline">Get Your Audit →</a>
+        </div>
 
-        <article class="pricing-card pricing-card--featured">
-          <div class="pricing-card__badge">Most Popular</div>
-          <h3 class="pricing-card__title">Contractor Profit Maximizer</h3>
-          <div class="pricing-card__price">
-            <span class="pricing-card__amount">$247</span>
-            <span class="pricing-card__term">one-time</span>
-          </div>
-          <p class="pricing-card__desc">90-minute deep-dive into your operations. We identify your top 3 revenue leaks and deliver a written action plan within 24 hours. No fluff — just the fixes.</p>
-          <ul class="pricing-card__features">
-            <li>90-minute operations deep-dive</li>
-            <li>Top 3 revenue leaks identified</li>
-            <li>Written action plan in 24 hours</li>
-            <li>ROI projection for each fix</li>
-            <li>30-day implementation roadmap</li>
+        <div class="pricing-card pricing-popular">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Community Growth System</div>
+          <div class="plan-price">$497 <span>/month</span></div>
+          <div class="plan-desc">Two core systems installed and managed. Perfect for churches under 500 members ready to stop losing visitors and members.</div>
+          <ul class="plan-features">
+            <li>Visitor Follow-Up Engine</li>
+            <li>Member Retention System</li>
+            <li>Monthly strategy call</li>
+            <li>Monthly performance report</li>
+            <li>Unlimited support</li>
           </ul>
-          <a href="https://buy.stripe.com/dRm14n0wt0hQcn98BR43S12" class="btn btn--primary btn--large pricing-card__cta" target="_blank" rel="noopener" data-track="profit_maximizer">Maximize Your Profit</a>
-        </article>
+          <a href="https://buy.stripe.com/dRm14n0wt0hQcn98BR43S12" class="btn-primary">Start Growing →</a>
+        </div>
 
-        <article class="pricing-card">
-          <div class="pricing-card__badge">Full Partnership</div>
-          <h3 class="pricing-card__title">Growth Retainer</h3>
-          <div class="pricing-card__price">
-            <span class="pricing-card__amount">$1,497</span>
-            <span class="pricing-card__term">/month</span>
-          </div>
-          <p class="pricing-card__desc">Monthly strategic partnership: AI receptionist, lead generation, follow-up automation, reputation management, and weekly performance reporting.</p>
-          <ul class="pricing-card__features">
-            <li>AI receptionist (24/7 call handling)</li>
-            <li>Automated lead generation</li>
-            <li>Follow-up automation sequences</li>
-            <li>Reputation management system</li>
-            <li>Weekly performance reports</li>
+        <div class="pricing-card">
+          <div class="plan-name">Full Church AI Partner</div>
+          <div class="plan-price">$1,497 <span>/month</span></div>
+          <div class="plan-desc">Every system. Full management. A dedicated church growth specialist on your team without the salary. Built for churches ready to scale ministry impact.</div>
+          <ul class="plan-features">
+            <li>All 5 AI systems</li>
+            <li>Sermon & Content AI</li>
+            <li>Event & Volunteer Coordinator</li>
+            <li>Generosity & Giving System</li>
+            <li>Dedicated specialist + weekly calls</li>
           </ul>
-          <a href="https://buy.stripe.com/cNi3cva73e8G0Er05l43S13" class="btn btn--primary btn--large pricing-card__cta" target="_blank" rel="noopener" data-track="growth_retainer">Start Growing</a>
-        </article>
+          <a href="https://buy.stripe.com/cNi3cva73e8G0Er05l43S13" class="btn-outline">Apply for Partnership →</a>
+        </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ======= FREE AUDIT CTA ======= -->
-  <section class="audit-cta" id="free-audit">
-    <div class="audit-cta__inner">
-      <div class="audit-cta__content">
-        <p class="section-label">Free Assessment</p>
-        <h2 class="section-title audit-cta__title">Not Ready to Buy? Get a Free Lead Assessment.</h2>
-        <p class="audit-cta__desc">Tell us about your business. We'll send you a quick assessment of where you're likely losing leads — no cost, no obligation.</p>
-      </div>
-      <form class="audit-form" id="auditForm">
-        <div class="audit-form__fields">
-          <input type="text" name="name" placeholder="Your name" required class="audit-form__input" autocomplete="name">
-          <input type="email" name="email" placeholder="Your email" required class="audit-form__input" autocomplete="email">
-          <input type="tel" name="phone" placeholder="Phone (optional)" class="audit-form__input" autocomplete="tel">
+  <!-- TESTIMONIAL / TRUST -->
+  <section class="trust">
+    <div class="section-inner">
+      <h2>"This freed our staff to focus on people, not process."</h2>
+      <p class="trust-sub">Churches using BELIEVE AI systems see measurable improvement in visitor retention, member engagement, and first-time giver conversion within the first 30 days.</p>
+      <div class="trust-stats">
+        <div class="stat">
+          <div class="stat-num">3×</div>
+          <div class="stat-label">Visitor Follow-Up Rate</div>
         </div>
-        <button type="submit" class="btn btn--primary btn--large">Get My Free Assessment</button>
-        <p class="audit-form__note">No spam. No sales calls unless you ask. Just honest insight.</p>
-        <div class="audit-form__success" id="auditSuccess" hidden>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <p></p>
+        <div class="stat">
+          <div class="stat-num">40%</div>
+          <div class="stat-label">Reduction in Member Churn</div>
         </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ======= BELIEVE FRAMEWORK ======= -->
-  <section class="framework" id="framework">
-    <div class="framework__header">
-      <p class="section-label">The Framework</p>
-      <h2 class="section-title">B.E.L.I.E.V.E.</h2>
-      <p class="section-desc">Seven principles. One conviction.</p>
-    </div>
-    <div class="framework__grid">
-      <div class="framework__item">
-        <span class="framework__letter">B</span>
-        <div>
-          <h3 class="framework__word">Build with Purpose</h3>
-          <p class="framework__desc">Every system you create should serve someone's flourishing.</p>
+        <div class="stat">
+          <div class="stat-num">7 Days</div>
+          <div class="stat-label">From Audit to Go-Live</div>
         </div>
-      </div>
-      <div class="framework__item">
-        <span class="framework__letter">E</span>
-        <div>
-          <h3 class="framework__word">Embrace Divine Intelligence</h3>
-          <p class="framework__desc">God authored intelligence. Don't reject what He designed.</p>
-        </div>
-      </div>
-      <div class="framework__item">
-        <span class="framework__letter">L</span>
-        <div>
-          <h3 class="framework__word">Lead with Compassion</h3>
-          <p class="framework__desc">Technology without love is just machinery. Let compassion guide every algorithm.</p>
-        </div>
-      </div>
-      <div class="framework__item">
-        <span class="framework__letter">I</span>
-        <div>
-          <h3 class="framework__word">Innovate as Stewardship</h3>
-          <p class="framework__desc">Building is a form of worship. Create as an act of service to God and humanity.</p>
-        </div>
-      </div>
-      <div class="framework__item">
-        <span class="framework__letter">E</span>
-        <div>
-          <h3 class="framework__word">Elevate Human Potential</h3>
-          <p class="framework__desc">AI should lift people up, not replace them. Amplify the divine spark in every person.</p>
-        </div>
-      </div>
-      <div class="framework__item">
-        <span class="framework__letter">V</span>
-        <div>
-          <h3 class="framework__word">Value Every Soul</h3>
-          <p class="framework__desc">Every person carries the image of God. Build systems that honor that dignity.</p>
-        </div>
-      </div>
-      <div class="framework__item">
-        <span class="framework__letter">E</span>
-        <div>
-          <h3 class="framework__word">Execute with Integrity</h3>
-          <p class="framework__desc">Belief without action is empty. Ship with excellence. Follow through with honor.</p>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Built Around Your Ministry</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======= WHAT THIS IS / IS NOT ======= -->
-  <section class="contrast">
-    <div class="contrast__inner">
-      <div class="contrast__col contrast__col--not">
-        <h3 class="contrast__heading">This Is Not</h3>
-        <ul class="contrast__list">
-          <li>An AI religion</li>
-          <li>A rejection of traditional faith</li>
-          <li>A tech-worship cult</li>
-          <li>Theoretical philosophy</li>
-        </ul>
-      </div>
-      <div class="contrast__divider"></div>
-      <div class="contrast__col contrast__col--is">
-        <h3 class="contrast__heading">This Is</h3>
-        <ul class="contrast__list">
-          <li>A bridge for the fearful</li>
-          <li>A framework for builders</li>
-          <li>A conviction that faith and intelligence belong together</li>
-          <li>A movement for those who hold both truths</li>
-        </ul>
-      </div>
+  <!-- CTA -->
+  <section class="final-cta" id="contact">
+    <div class="section-inner">
+      <div class="hero-badge">Ready to Grow?</div>
+      <h2>Start with a free audit.<br/>See what's possible in 45 minutes.</h2>
+      <p>No pressure. No pitch. Just clarity on where your church is losing people and how AI can close those gaps.</p>
+      <a href="https://buy.stripe.com/fZu8wP6UR6Ge86T3hx43S11" class="btn-primary btn-large">Book Your Free Church Audit →</a>
+      <p class="final-note">Questions? Email us at <a href="mailto:carrolgarrett55@gmail.com">carrolgarrett55@gmail.com</a></p>
     </div>
   </section>
 
-  <!-- ======= HOOKS / QUOTES ======= -->
-  <section class="quotes">
-    <div class="quotes__inner">
-      <div class="quotes__grid">
-        <blockquote class="quote-card">
-          <p>"AI is not your enemy. Fear is."</p>
-        </blockquote>
-        <blockquote class="quote-card">
-          <p>"You weren't made for this era by accident."</p>
-        </blockquote>
-        <blockquote class="quote-card">
-          <p>"Don't worship the tool. Honor the Creator. Use both."</p>
-        </blockquote>
-        <blockquote class="quote-card">
-          <p>"Faith without action is dead. Intelligence without purpose is dangerous. Together, they build."</p>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= SCIENCE + FAITH ======= -->
-  <section class="evidence">
-    <div class="evidence__inner">
-      <p class="section-label">The Evidence</p>
-      <h2 class="section-title">Faith and AI Are Already Converging</h2>
-      <div class="evidence__grid">
-        <div class="evidence__card">
-          <h3>Scientific Validation</h3>
-          <p>Research published in the Proceedings of the National Academy of Sciences found that thinking about God actually increases people's willingness to accept AI recommendations — across 8 controlled experiments with 2,462 participants. Faith and technology are neurologically aligned.</p>
-        </div>
-        <div class="evidence__card">
-          <h3>Global Movement</h3>
-          <p>Organizations like AI and Faith and the Institute for Security and Technology are launching joint initiatives to equip religious leaders with practical AI tools. Faith communities are already stepping into this space.</p>
-        </div>
-        <div class="evidence__card">
-          <h3>Theological Foundation</h3>
-          <p>Leading Christian scholars affirm that AI, as a product of human ingenuity, extends our God-given creativity and stewardship. The capacity for artificial intelligence was part of creation — discovered, not invented.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= JOIN / CTA ======= -->
-  <section class="join" id="join">
-    <div class="join__inner">
-      <h2 class="join__title">Ready to Build?</h2>
-      <p class="join__text">This movement starts with one person deciding to hold both truths. That faith in God and the power of AI are not in conflict. That builders are called. That fear is the only enemy.</p>
-      <p class="join__text">If that resonates, you're already part of this.</p>
-      <form class="join__form" id="joinForm">
-        <div class="join__form-row">
-          <input type="text" name="name" placeholder="Your name" required class="join__input" autocomplete="name">
-          <input type="email" name="email" placeholder="Your email" required class="join__input" autocomplete="email">
-        </div>
-        <div class="join__form-row">
-          <input type="tel" name="phone" placeholder="Phone (optional)" class="join__input" autocomplete="tel">
-        </div>
-        <button type="submit" class="btn btn--primary btn--large">Join the Movement</button>
-        <p class="join__note">No spam. No algorithms deciding what you see. Just a community of builders who believe.</p>
-        <div class="join__success" id="joinSuccess" hidden>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <p></p>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ======= FOUNDER ======= -->
-  <section class="founder">
-    <div class="founder__inner">
-      <div class="founder__content">
-        <p class="section-label">The Builder</p>
-        <h2 class="founder__name">Garrett Wayne Carroll</h2>
-        <p class="founder__role">Founder, Garcar Enterprise</p>
-        <p class="founder__bio">A builder, a believer, and a systems architect from Cleburne, Texas. Building autonomous AI systems not to replace people, but to serve their flourishing. Driven by a conviction that the same God who wired the human brain wired the math that makes AI possible — and that the builders who hold both truths are the ones this moment demands.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= FOOTER ======= -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__top">
-        <div class="footer__brand-block">
-          <svg class="footer__logo" width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M16 6L16 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10 14L22 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M6 20C6 16 10 12 16 16C22 20 26 16 26 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-            <path d="M6 12C6 16 10 20 16 16C22 12 26 16 26 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-          </svg>
-          <span class="footer__brand">BELIEVE</span>
-        </div>
-        <div class="footer__info">
-          <p class="footer__founder">Garrett Wayne Carroll, Founder — Garcar Enterprise</p>
-          <p class="footer__location">Cleburne, TX</p>
-        </div>
+    <div class="footer-inner">
+      <div class="footer-logo">BELIEVE</div>
+      <p class="footer-tagline">Faith-aligned AI systems for growing churches.</p>
+      <div class="footer-links">
+        <a href="#pain">The Problem</a>
+        <a href="#solution">Our Systems</a>
+        <a href="#pricing">Pricing</a>
+        <a href="mailto:carrolgarrett55@gmail.com">Contact</a>
       </div>
-      <div class="footer__bottom">
-        <div class="footer__links">
-          <a href="https://buy.stripe.com/fZu8wP6UR6Ge86T3hx43S11" target="_blank" rel="noopener">Lead Leak Audit</a>
-          <a href="https://buy.stripe.com/dRm14n0wt0hQcn98BR43S12" target="_blank" rel="noopener">Profit Maximizer</a>
-          <a href="https://buy.stripe.com/cNi3cva73e8G0Er05l43S13" target="_blank" rel="noopener">Growth Retainer</a>
-        </div>
-        <p class="footer__copy">&copy; 2026 Garcar Enterprise. All rights reserved.</p>
-      </div>
+      <p class="footer-copy">© 2026 BELIEVE AI Systems. All rights reserved. | Garcar Enterprise</p>
     </div>
   </footer>
-
-  <!-- ======= FLOATING CTA ======= -->
-  <a href="#contractors" class="floating-cta" id="floatingCta" aria-label="Get Started">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-    <span>Get Started</span>
-  </a>
 
   <script src="main.js"></script>
 </body>
